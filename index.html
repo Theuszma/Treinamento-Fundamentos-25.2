@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/globals.css">
+    <title>Meme Drop</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-left">
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="menu-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <nav class="menu">
+                <ul>
+                    <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&list=RDdQw4w9WgXcQ&start_radio=1" target="_blank">Início</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&list=RDdQw4w9WgXcQ&start_radio=1" target="_blank">Sobre</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&list=RDdQw4w9WgXcQ&start_radio=1" target="_blank">Serviços</a></li>
+                </ul>
+                <div class="login">
+                    <a href="#" class="login-b" id="login-menu-button">Login</a>
+                </div>
+            </nav>
+        </div>
+        <div class="header-center">
+            <img src="assets/imgs/Logo/Logo.png" alt="Meme Drop Logo" height="29" width="47">
+        </div>
+        <div class="header-right">
+            <div class="cart-icon-container" id="cart-icon">
+                <img src="assets/imgs/Icones/cart.png" alt="Carrinho de Compras" height="35" width="35">
+                <span class="cart-counter" id="cart-counter">0</span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="search-bar-container">
+            <input type="text" id="search-input" placeholder="Buscar produtos">
+            <button id="search-button">Buscar</button>
+        </div>
+
+        <div class="produtos-grid">
+
+            <div class="produto-card" 
+                data-folder="assets/imgs/Gigas/" 
+                data-images="G1.png,G2.png,G3.png" 
+                data-name="Giga Chad" data-price="999999.99" data-product-id="giga-chad">
+                <div class="imagem-container">
+                    <img src="assets/imgs/Gigas/G1.png" alt="GigaChad" class="produto-imagem">
+                    <button class="nav-btn prev-btn">&lt;</button>
+                    <button class="nav-btn next-btn">&gt;</button>
+                </div>
+                <div class="info-produto">
+                    <h3>Giga Chad</h3>
+                    <p>Can you hear the silence? Can you see the dark? Can you fix the broken?</p>
+                    <p class="preco">Preço: R$999.999,99!</p>
+                    <button class="comprar-btn">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+
+            <div class="produto-card" 
+                data-folder="assets/imgs/Martin/" 
+                data-images="M1.png,M2.png,M3.png" 
+                data-name="Sr. Cinema" data-price="0" data-product-id="sr-cinema">
+                <div class="imagem-container">
+                    <img src="assets/imgs/Martin/M1.png" alt="MartinScorsese" class="produto-imagem">
+                    <button class="nav-btn prev-btn">&lt;</button>
+                    <button class="nav-btn next-btn">&gt;</button>
+                </div>
+                <div class="info-produto">
+                    <h3>Sr. Cinema</h3>
+                    <p>Absolute Cinema.</p>
+                    <p class="preco">Preço: 1 Oscar</p>
+                    <button class="comprar-btn">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+
+            <div class="produto-card" 
+                data-folder="assets/imgs/(G)old pack/" 
+                data-images="G1.png,G2.png,G3.png" 
+                data-name="(G)old pack" data-price="0" data-product-id="gold-pack">
+                <div class="imagem-container">
+                    <img src="assets/imgs/(G)old pack/G1.png" alt="TheGoldenOnes" class="produto-imagem">
+                    <button class="nav-btn prev-btn">&lt;</button>
+                    <button class="nav-btn next-btn">&gt;</button>
+                </div>
+                <div class="info-produto">
+                    <h3>(G)old pack</h3>
+                    <p>Velinhos que tem lugar nos nossos corações</p>
+                    <p class="preco">Preço: press F</p>
+                    <button class="comprar-btn">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+
+            <div class="produto-card" 
+                data-folder="assets/imgs/Celebrity Pack/" 
+                data-images="C1.png,C2.png,C3.png" 
+                data-name="Celebrity Pack" data-price="0" data-product-id="celebrity-pack">
+                <div class="imagem-container">
+                    <img src="assets/imgs/Celebrity Pack/C1.png" alt="TheCelebrities" class="produto-imagem">
+                    <button class="nav-btn prev-btn">&lt;</button>
+                    <button class="nav-btn next-btn">&gt;</button>
+                </div>
+                <div class="info-produto">
+                    <h3>Celebrity Pack</h3>
+                    <p>Hollywood baby</p>
+                    <p class="preco">Preço: 1 mundial p palmeiras</p>
+                    <button class="comprar-btn">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+
+            <div class="produto-card" 
+                data-folder="assets/imgs/Starter Pack/" 
+                data-images="S1.png,S2.png,S3.png" 
+                data-name="Starter Pack" data-price="0" data-product-id="starter-pack">
+                <div class="imagem-container">
+                    <img src="assets/imgs/Starter Pack/S1.png" alt="RickRolado" class="produto-imagem">
+                    <button class="nav-btn prev-btn">&lt;</button>
+                    <button class="nav-btn next-btn">&gt;</button>
+                </div>
+                <div class="info-produto">
+                    <h3>Starter Pack</h3>
+                    <p>Sim, você foi rick rolado</p>
+                    <p class="preco">Preço: Get the fuck out of my room</p>
+                    <button class="comprar-btn">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+
+            <div class="produto-card" 
+                data-folder="assets/imgs/Duvidosos/" 
+                data-images="D1.png,D2.png,D3.png,D4.png" 
+                data-name="The sus pack" data-price="120118105100101111115469911110910" data-product-id="sus-pack">
+                <div class="imagem-container">
+                    <img src="assets/imgs/Duvidosos/D1.png" alt="Duvidosos" class="produto-imagem">
+                    <button class="nav-btn prev-btn">&lt;</button>
+                    <button class="nav-btn next-btn">&gt;</button>
+                </div>
+                <div class="info-produto">
+                    <h3>The sus pack</h3>
+                    <p>Cê anda procurando o que nessa internet ai hein??</p>
+                    <p class="preco">Preço: 120 118 105 100 101 111 105 115 46 99 111 109 10</p>
+                    <button class="comprar-btn">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+
+            <div class="produto-card" 
+                data-folder="assets/imgs/SAM/" 
+                data-images="S1.png,S2.png,S3.png,S4.png" 
+                data-name="The SAM pack" data-price="1.00" data-product-id="sam-pack">
+                <div class="imagem-container">
+                    <img src="assets/imgs/SAM/S1.png" alt="OSAMEHBRABO" class="produto-imagem">
+                    <button class="nav-btn prev-btn">&lt;</button>
+                    <button class="nav-btn next-btn">&gt;</button>
+                </div>
+                <div class="info-produto">
+                    <h3>The SAM pack</h3>
+                    <p>COPIA NÃO COMÉDIA</p>
+                    <p class="preco">Preço: R$ 1,00</p>
+                    <button class="comprar-btn">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+            
+        </div>
+    </main>
+
+    <div class="add-to-cart-message" id="add-to-cart-message">Adicionado ao carrinho!</div>
+
+    <div class="modal-overlay" id="login-modal-overlay">
+        <div class="modal-content">
+            <button class="close-button" id="close-modal-button">&times;</button>
+            <h2>Login</h2>
+            <form id="login-form">
+                <div class="form-group">
+                    <label for="email-input">Email:</label>
+                    <input type="email" id="email-input" required>
+                </div>
+                <div class="form-group">
+                    <label for="password-input">Senha:</label>
+                    <input type="password" id="password-input" required>
+                </div>
+                <button type="submit" class="login-submit-btn">Entrar</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="cart-panel" id="cart-panel">
+        <div class="cart-header">
+            <h3>Seu Carrinho</h3>
+            <button class="close-button" id="close-cart-button">&times;</button>
+        </div>
+        <div class="cart-items" id="cart-items">
+        </div>
+        <div class="cart-footer">
+            <button class="checkout-btn" id="checkout-button">Finalizar Compra</button>
+        </div>
+    </div>
+
+    <div class="modal-overlay" id="checkout-modal-overlay">
+        <div class="modal-content">
+            <button class="close-button" id="close-checkout-modal-button">&times;</button>
+            <img src="assets/imgs/Logo/Beta.gif" alt="SOBRA NADA" style="width:100%; border-radius: 8px;">
+            <p style="text-align: center; font-weight: bold; margin-top: 20px;">
+                Você não tem aura para comprar aqui betinha, vá farmar.
+            </p>
+        </div>
+    </div>
+
+    <script src="assets/js/index.js"></script>
+
+</body>
+</html>
